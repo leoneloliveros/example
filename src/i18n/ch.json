@@ -1,0 +1,22 @@
+{
+  "toolbar.session.close": "登出",
+  "sidebar.pages.title": "頁數",
+  "sidebar.pages.overview": "總覽",
+  "sidebar.pages.dashboards": "儀表板",
+  "sidebar.pages.management": "管理",
+  "sidebar.pages.management.users": "用戶數",
+  "sidebar.pages.tools": "工具",
+  "sidebar.pages.ipAvailability": "IP可用性",
+  "sidebar.pages.markings": "標記",
+  "sidebar.pages.importCRM": "導入CRM",
+  "sidebar.pages.loadAgenda": "負荷議程",
+  "sidebar.pages.robots": "機械人",
+
+  "dashboard.analytics.title": "員工活動",
+  "dashboard.analytics.registered": "註冊",
+  "dashboard.analytics.online": "線上",
+  "active": "活性"
+
+
+
+}

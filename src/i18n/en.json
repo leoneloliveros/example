@@ -1,0 +1,24 @@
+{
+  "toolbar.session.close": "Sign off",
+  "sidebar.pages.title": "Pages",
+  "sidebar.pages.overview": "Overview",
+  "sidebar.pages.dashboards": "Dashboards",
+  "sidebar.pages.management": "Management",
+  "sidebar.pages.management.users": "Users",
+  "sidebar.pages.tools": "Tools",
+  "sidebar.pages.ipAvailability": "IP Availability",
+  "sidebar.pages.markings": "Markings",
+  "sidebar.pages.importCRM": "Import CRM",
+  "sidebar.pages.loadAgenda": "Load Agenda",
+  "sidebar.pages.robots": "Robots",
+
+
+
+  "dashboard.analytics.title": "Employee Activity",
+  "dashboard.analytics.registered": "Registered",
+  "dashboard.analytics.online": "Online",
+  "active": "Active",
+
+  "users": "users"
+
+}
