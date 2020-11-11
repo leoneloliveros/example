@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
-import { Card, CardContent, Grid } from '@material-ui/core';
-
-import { FilesDropzone } from 'components';
+import {  Grid } from '@material-ui/core';
 import { FileCard } from './components';
 
 const useStyles = makeStyles(theme => ({

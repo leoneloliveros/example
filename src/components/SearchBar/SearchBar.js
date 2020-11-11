@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
-import { Grid, Button } from '@material-ui/core';
-import FilterListIcon from '@material-ui/icons/FilterList';
+import { Grid } from '@material-ui/core';
 
 import { Search, Filter } from './components';
 
@@ -33,10 +32,6 @@ const SearchBar = props => {
   const classes = useStyles();
 
   const [openFilter, setOpenFilter] = useState(false);
-
-  const handleFilterOpen = () => {
-    setOpenFilter(true);
-  };
 
   const handleFilterClose = () => {
     setOpenFilter(false);

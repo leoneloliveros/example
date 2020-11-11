@@ -63,11 +63,11 @@ const Roles = props => {
       <CardHeader 
         title={t('roles')}
         action={
-          <a onClick={() => handleAddOpen()}>
+          <Button onClick={() => handleAddOpen()}>
             <IconButton aria-label="Add">
             <AddIcon />
             </IconButton>
-          </a>
+          </Button>
         }
         classes={{ action: classes.action }}
         className={classes.action}

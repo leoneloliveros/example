@@ -83,11 +83,11 @@ const FormalStudies = props => {
     <CardHeader 
       title={t('formalStudies')}
       action={
-        <a onClick={() => handleAddOpen()}>
+        <Button onClick={() => handleAddOpen()}>
           <IconButton aria-label="Add">
           <AddIcon />
           </IconButton>
-        </a>
+        </Button>
       }
       classes={{ action: classes.action }}
       className={classes.action}

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { LinearProgress } from '@material-ui/core';
 
-import { NavBar, TopBar, ChatBar } from './components';
+import { NavBar, TopBar } from './components';
 
 const useStyles = makeStyles(() => ({
   root: {

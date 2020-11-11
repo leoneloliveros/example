@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import moment from 'moment';
 import PropTypes from 'prop-types';
@@ -18,7 +18,6 @@ import {
   colors
 } from '@material-ui/core';
 
-import axios from 'utils/axios';
 import { Label } from 'components';
 import { PlatformEdit } from './components';
 

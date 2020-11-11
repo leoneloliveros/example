@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Tabs, Tab, Divider, colors } from '@material-ui/core';
 
 import axios from 'utils/axios';
-import { Page, Alert } from 'components';
+import { Page } from 'components';
 import { Header, Overview, Files, Activities, Subscribers } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -33,7 +33,6 @@ const ProjectDetails = props => {
   const { match, history } = props;
   const classes = useStyles();
   const { id, tab } = match.params;
-  const [openAlert, setOpenAlert] = useState(true);
   const [project, setProject] = useState(null);
 
   useEffect(() => {
@@ -53,10 +52,6 @@ const ProjectDetails = props => {
       mounted = false;
     };
   }, []);
-
-  const handleAlertClose = () => {
-    setOpenAlert(false);
-  };
 
   const handleTabsChange = (event, value) => {
     history.push(value);

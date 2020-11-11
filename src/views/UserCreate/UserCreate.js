@@ -6,10 +6,7 @@ import { Page } from 'components';
 import {
   Header,
   AreaSelection,
-  AboutProject,
-  Preferences,
-  ProjectCover,
-  ProjectDetails
+  AboutProject
 } from './components';
 
 const useStyles = makeStyles(theme => ({

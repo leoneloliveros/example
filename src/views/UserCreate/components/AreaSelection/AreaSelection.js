@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import {
-  Button,
   Card,
   CardHeader,
   CardContent,
@@ -21,7 +20,6 @@ import {
 
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-import LaunchIcon from "@material-ui/icons/Launch";
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -52,26 +50,6 @@ const AreaSelection = props => {
 
   const classes = useStyles();
 
-  const options = [
-    {
-      value: 'freelancer',
-      title: 'I\'m a freelancer',
-      description: 'I\'m looking for teamates to join in a personal project'
-    },
-    {
-      value: 'projectOwner',
-      title: 'I’m a project owner',
-      description:
-        'I\'m looking for freelancer or contractors to take care of my project'
-    },
-    {
-      value: 'affiliate',
-      title: 'I want to join affiliate',
-      description:
-        'I\'m looking for freelancer or contractors to take care of my project'
-    }
-  ];
-
   const [data, setData] = useState([{name: "Pymes", roles: [{ name: "Executor"}, { name: "Dispatcher" }]}, {name: "Configuration", roles: [{ name: "Executor"}, { name: "Dispatcher" }]}, {name: "Pymes", roles: [{ name: "Executor"}, { name: "Dispatcher" }]}, {name: "Pymes", roles: [{ name: "Executor"}, { name: "Dispatcher" }]}, {name: "Pymes", roles: [{ name: "Executor"}, { name: "Dispatcher" }]}]);
   const [information, setInformation] = useState([]);
 
@@ -90,7 +68,7 @@ const AreaSelection = props => {
     if (feature.checked) {
       selectedData.push({ area: area.name, role: role.name });
     } else {
-      selectedData = selectedData.filter((item) =>  (!( item.area == area.name && item.role == role.name )));
+      selectedData = selectedData.filter((item) =>  (!( item.area === area.name && item.role === role.name )));
     }
     return { selectedData, checkboxInformation }
   }
@@ -107,6 +85,7 @@ const AreaSelection = props => {
         const functionData = dataConstructor(checkboxInformation, selectedData, area, {name: child.name, index });
         selectedData = functionData.selectedData
         checkboxInformation = functionData.checkboxInformation;
+        return true
       });
     }
     setInformation([...selectedData])

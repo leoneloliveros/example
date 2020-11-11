@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Typography, Grid, Button, colors } from '@material-ui/core';
-import ShareIcon from '@material-ui/icons/Share';
 
 import { Label } from 'components';
 import { Application } from './components';
@@ -35,9 +34,6 @@ const Header = props => {
 
   const [openApplication, setOpenApplication] = useState(false);
 
-  const handleApplicationOpen = () => {
-    setOpenApplication(true);
-  };
 
   const handleApplicationClose = () => {
     setOpenApplication(false);

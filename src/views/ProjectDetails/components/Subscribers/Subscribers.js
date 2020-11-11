@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
-
-import { SubscriberCard } from './components';
 import { Results } from '../../../ProjectList/components';
 
 const useStyles = makeStyles(() => ({

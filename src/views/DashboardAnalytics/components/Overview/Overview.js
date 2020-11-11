@@ -40,13 +40,6 @@ const Overview = props => {
 
   const classes = useStyles();
 
-  const data = {
-    income: '854,355.00',
-    expanses: '373,250.50',
-    profit: '123,532.00',
-    subscriptions: '26,000'
-  };
-
   return (
     <Card
       {...rest}
